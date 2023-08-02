@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block title %}contact{% endblock title %}
+
+
+
+{% block body %}
+<nav class="navbar">
+    <div class="navbar-container container">
+        <input type="checkbox">
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </div>
+        <ul class="nav-items">
+            <li><a href="home">Home</a></li>
+            <li><a href="home">About Us</a></li>
+            <li><a href="home">Products</a></li>
+            <li><a href="home">Dealers</a></li>
+            <li><a href="home">Why Deal With Us</a></li>
+            <li><a href="contact">Contact Us</a></li>
+
+        </ul>
+        <h2 class="md-heading">ZAINI OLD MOTOR PARTS</h2>
+    </div>
+</nav>
+<section class="contact-section">
+    <div class="contact-container container">
+        <h2 class="lg-heading main-heading">Contact Us For More Details :</h2>
+        <div class="content-form">
+            <div class="contact-content">
+                <p class="md-heading"><i class='fas'>&#xf1b9;</i> Zaini Old Motor Parts.</p>
+                <p class="md-heading"><i class='fas'>&#xf095;</i> Contact Number : +91 8686491059 / +91 9885781903.</p>
+                <p class="md-heading"><i class='fas'>&#xf4d7;</i> Address : Afzal Gunj Hyderabad and Bahadurpura Hyderabad.</p>
+            </div>
+            <div class="form">
+                {% for message in messages %}
+                <span style="font-size: 2rem; color: #fdfdfd;"><strong>Hey! {{message}}</strong></span>
+                {% endfor %}
+                <h2 class="lg-heading">Submit Your Details Below :</h2>
+                <form method="post" action="/contact" enctype="multipart/form-data">
+                    {% csrf_token %}
+
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name" id="name" required><br><br>
+
+                    <label for="mobile_number">Mobile Number:</label><br>
+                    <input type="number" name="mobile_number" id="mobile_number" required><br><br>
+
+                    <label for="email">E-Mail:</label><br>
+                    <input type="email" name="email" id="email" required><br><br>
+
+                    <label for="state">State:</label><br>
+                    <input type="text" name="state" id="state" required><br><br>
+
+                    <label for="required_part">Required Part:</label><br>
+                    <input type="text" name="required_part" id="required_part" required><br><br>
+
+                    <label for="make">Make:</label><br>
+                    <input type="text" name="make" id="make" required><br><br>
+
+                    <label for="model">Model:</label><br>
+                    <input type="text" name="model" id="model" required><br><br>
+
+                    <label for="image">Required Part Image:</label><br>
+                    <input type="file" name="image" id="image" required><br><br>
+
+                    <label for="description">Description:</label><br>
+                    <textarea name="description" id="description" cols="30" rows="10"
+                        placeholder="Describe Your Order"></textarea><br><br>
+
+                    <input type="submit" name="submit" class="submit-btn">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer id="footer">
+    <h2>Zaini Old Motor Parts &copy; All Rights Reserved</h2>
+</footer>
+{% endblock body %}
