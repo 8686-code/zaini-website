@@ -158,17 +158,17 @@ EMAIL_HOST_PASSWORD = "uqwfrodkqbizxvdb"
 
 
 ############################################ AWS ########################################
-# import boto3
-# from storages.backends.s3boto3 import S3Boto3Storage
+import boto3
+from storages.backends.s3boto3 import S3Boto3Storage
 
-# DEFAULT_FILE_STORAGE = 'website.storage_backends.MediaStorage'
+DEFAULT_FILE_STORAGE = 'website.storage_backends.MediaStorage'
 
-# STATICFILES_STORAGE = 'website.storage_backends.StaticStorage'
+STATICFILES_STORAGE = 'website.storage_backends.StaticStorage'
 
-# AWS_STORAGE_BUCKET_NAME = 'omp-786'
+AWS_STORAGE_BUCKET_NAME = 'omp-786'
 
-# AWS_S3_REGION_NAME = 'ap-south-1'
+AWS_S3_REGION_NAME = 'ap-south-1'
 
-# AWS_ACCESS_KEY_ID = 'AKIASJAKYGE7EEMYAAM3'
+AWS_ACCESS_KEY_ID = 'AKIASJAKYGE7EEMYAAM3'
 
-# AWS_SECRET_ACCESS_KEY = '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'
+AWS_SECRET_ACCESS_KEY = 'vE7RagcH4Ajm5iSW1H3ZL9CyeTpvFcgIe0C9RrAI'
