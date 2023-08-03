@@ -85,8 +85,13 @@ body{
     border-bottom: 2px solid #000;
     padding: 3px 5px;
     order: 1;
-    color: #000;
     align-self: center;
+    color: transparent;
+    background: url("/static/benefit3.jpg");
+    background-size: cover;
+    background-position: top;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .navbar .nav-items{
@@ -103,9 +108,14 @@ body{
 
 .nav-items a{
     text-decoration: none;
-    color: #000;
     font-weight: 500;
     transition: color 0.2s ease-in-out;
+    color: transparent;
+    background: url("/static/benefit1.jpg");
+    background-size: cover;
+    background-position: top;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .nav-items a:hover{
@@ -157,6 +167,7 @@ body{
     align-items: center;
 }
 
+
 .showcase-container .showcase-side-content{
     height: 100%;
     width: 50%;
@@ -184,7 +195,6 @@ body{
 .showcase-side-content a{
     animation: about-us 2s 1 forwards ease-in-out;
 }
-
 
 @keyframes about-us{
     from{
@@ -235,6 +245,13 @@ body{
 .about-content .lg-heading{
     display: inline-block;
     border-bottom: 2px solid #000;
+    color: transparent;
+    background: url("/static/benefit3.jpg");
+    background-size: cover;
+    background-position: top;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
 }
 
 .about-content .about-para{
@@ -254,6 +271,12 @@ body{
     color: #dcc129;
     text-align: center;
     margin-bottom: 4rem;
+    color: transparent;
+    background: url("/static/benefit3.jpg");
+    background-size: cover;
+    background-position: top;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .product-wrapper{
@@ -325,7 +348,13 @@ body{
 .dealers-container .lg-heading{
     display: inline-block;
     color: #dcc129;
-    border-bottom: 2px solid #b7a023;   
+    border-bottom: 2px solid #b7a023; 
+    color: transparent;
+    background: url("/static/benefit3.jpg");
+    background-size: cover;
+    background-position: top;
+    background-clip: text;
+    -webkit-background-clip: text;  
 }
 
 
@@ -359,6 +388,15 @@ body{
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+
+.contact-container h2{
+    color: transparent;
+    background: url("/static/benefit2.jpg");
+    background-size: cover;
+    background-position: top;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .contact-content{
@@ -427,9 +465,9 @@ body{
     border-bottom: 2px solid #000;
     text-align: center;
     color: transparent;
-    background: url("/static/test.jpg");
+    background: url("/static/benefit3.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: top;
     background-clip: text;
     -webkit-background-clip: text;
 }
@@ -447,14 +485,20 @@ body{
 }
 
 /* ##################################### footer-styling ################################## */
-
+#footer{
+    background: #000;
+}
 footer h2{
     text-align: center;
     font-size: 2rem;
     font-weight: 500;
     padding: 0.5rem;
-    color: #000;
-    background: #dcc129;
+    color: transparent;
+    background: url("/static/benefit3.jpg");
+    background-size: cover;
+    background-position: top;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 /* ################################### media-queries for max-width 375px ############################################ */

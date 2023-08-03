@@ -16,16 +16,16 @@ from django.core.files.base import ContentFile
 
 
 def home(request):
-    return render(request, "home.html")
+    return render(request, "index.html")
 
-def about(request):
-    return render(request, "home.html")
+# def about(request):
+#     return render(request, "")
 
-def product(request):
-    return render(request,"home.html")
+# def product(request):
+#     return render(request,"index.html")
 
-def dealers(request):
-    return render(request, "home.html")
+# def dealers(request):
+#     return render(request, "index.html")
 
 from django.core.exceptions import ValidationError
 

@@ -27,10 +27,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.home, name = "home"),
     path("home", views.home, name="home"),
-    path("about", views.about, name="about"),
-    path("product", views.product, name="product"),
-    path("dealers", views.dealers, name="dealers"), 
-    path("contact", views.contact, name="contact"),
+    # path("about", views.home, name="about"),
+    # path("product", views.home, name="product"),
+    # path("dealers", views.home, name="dealers"), 
+    path("contact", views.contact, name="contact")
 ]
 if settings.DEBUG:
     urlpatterns+=static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
