@@ -25,5 +25,10 @@
             "src": "/(.*)",
             "dest": "website/wsgi.py"
         }
-    ]
+    ],
+    "functions": {
+        "api/*": {
+            "memory": 1024
+        }
+    }
 }

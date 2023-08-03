@@ -14,20 +14,11 @@ from django.core.files.storage import default_storage
 
 from django.core.files.base import ContentFile
 
+from django.core.exceptions import ValidationError
+
 
 def home(request):
     return render(request, "index.html")
-
-# def about(request):
-#     return render(request, "")
-
-# def product(request):
-#     return render(request,"index.html")
-
-# def dealers(request):
-#     return render(request, "index.html")
-
-from django.core.exceptions import ValidationError
 
 def contact(request):
     if request.method == "POST":
@@ -141,5 +132,12 @@ def send_email(request, name, mobile_number, email, state, required_part, make, 
         messages.error(request, f"Failed to send email: {e}")
 
     return redirect('/contact')
+
+def anotherFunction_view(request):
+    # Perform any necessary processing here
+    # Call your `anotherFunction` if needed
+
+    # Return an HttpResponse or any other response object
+    return HttpResponse("Hello, this is anotherFunction!")
 
 

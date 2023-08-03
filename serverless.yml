@@ -1,0 +1,10 @@
+functions:
+  myFunction:
+    handler: src/functions/myFunction.handler
+    events:
+      - http:
+          path: api/*
+          method: post
+      - http:
+          path: api/anotherFunction
+          method: get
