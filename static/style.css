@@ -49,12 +49,12 @@ body{
 .primary-btn{
     color: #000;
     background: #b7a023;
-    transition:  all 0.3s ease-in-out;
 }
 
 .primary-btn:hover{
     background: #f7d305;
     color: #189d18;
+
 }
 
 /* ############################### navbar-styling############################### */
@@ -109,7 +109,7 @@ body{
 .nav-items a{
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     color: transparent;
     background: url("/static/benefit1.jpg");
     background-size: cover;
@@ -119,7 +119,12 @@ body{
 }
 
 .nav-items a:hover{
-    color: #189d18;
+    color: transparent;
+    background: url("/static/benefit3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
     border-bottom: 2px solid #000 ;
 }
 
@@ -242,11 +247,12 @@ body{
     height: 50%;
 }
 
-.about-content .lg-heading{
+.about-container .lg-heading{
     display: inline-block;
     border-bottom: 2px solid #000;
+    align-self: center;
     color: transparent;
-    background: url("/static/benefit3.jpg");
+    background: url("/static/benefit1.jpg");
     background-size: cover;
     background-position: top;
     background-clip: text;
@@ -285,6 +291,14 @@ body{
     justify-content: space-around;
 }
 
+.product-content h3{
+    color: transparent;
+    background: url("/static/benefit3.jpg");
+    background-size: cover;
+    background-position: top;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 
 .product-wrapper img{
     display: block;
@@ -392,7 +406,7 @@ body{
 
 .contact-container h2{
     color: transparent;
-    background: url("/static/benefit2.jpg");
+    background: url("/static/benefit3.jpg");
     background-size: cover;
     background-position: top;
     background-clip: text;
