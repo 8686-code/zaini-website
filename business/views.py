@@ -133,11 +133,4 @@ def send_email(request, name, mobile_number, email, state, required_part, make, 
 
     return redirect('/contact')
 
-def anotherFunction_view(request):
-    # Perform any necessary processing here
-    # Call your `anotherFunction` if needed
-
-    # Return an HttpResponse or any other response object
-    return HttpResponse("Hello, this is anotherFunction!")
-
 

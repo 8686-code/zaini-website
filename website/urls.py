@@ -24,7 +24,6 @@ admin.site.site_title = "Zaini Old Motor Parts Admin Portal"
 admin.site.index_title = "Welcome to Zaini Old Motor Parts Researcher Portal"
 
 urlpatterns = [
-    path('api/anotherFunction', views.anotherFunction_view),
     path('admin/', admin.site.urls),
     path("", views.home, name = "home"),
     path("home", views.home, name="home"),

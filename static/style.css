@@ -48,11 +48,12 @@ body{
 
 .primary-btn{
     color: #000;
-    background: #b7a023;
+    background: #dcc129;
+    transition: all 0.2s ease-in-out;
 }
 
 .primary-btn:hover{
-    background: #f7d305;
+    background: url(/static/benefit1.jpg);
     color: #189d18;
 
 }
@@ -170,6 +171,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #dcc129;
 }
 
 
@@ -178,7 +180,7 @@ body{
     width: 50%;
     order: 1;
     text-align: center;
-    color: #dcc129;
+    color: dark;
 }
 
 .arrow{
@@ -489,8 +491,7 @@ body{
 .benefit-section-content a{
     margin-top: 3rem;
     align-self: center;
-    background: #7f6f10;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: all 0.5s ease-in-out;
 }
 
