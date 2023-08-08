@@ -44,7 +44,7 @@ def contact(request):
         except ValidationError as e:
             if "description" in e.error_dict:
                 description = description[:500]
-                contact = Contact(
+                contact = contact(
                     name=name, mobile_number=mobile_number, email=email, state=state,
                     required_part=required_part, make=make, model=model, description=description,
                     image=image
