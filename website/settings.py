@@ -31,8 +31,8 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
     'business.apps.BusinessConfig',
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -130,12 +130,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'staticfiles_build'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build' 'static')
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = "/media/"
 ############################### Added manually ###################################
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'business/static')]
 
 # MESSAGE_TAGS = {messages.INFO: "",50: "critical",}
 
@@ -170,6 +170,6 @@ AWS_STORAGE_BUCKET_NAME = 'omp-786'
 
 AWS_S3_REGION_NAME = 'ap-south-1'
 
-AWS_ACCESS_KEY_ID = 'AKIASJAKYGE7EEMYAAM3'
+AWS_ACCESS_KEY_ID = 'AKIASJAKYGE7O6FN3SPO'
 
-AWS_SECRET_ACCESS_KEY = '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'
+AWS_SECRET_ACCESS_KEY = 'Cx6HzkH5pF/QcpJ0If63k7UFR7CgBJk0aXCMZl74'
