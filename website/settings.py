@@ -160,6 +160,8 @@ EMAIL_HOST_PASSWORD = "uqwfrodkqbizxvdb"
 import boto3
 from storages.backends.s3boto3 import S3Boto3Storage
 
+from website.storage_backends import MediaStorage, StaticStorage
+
 DEFAULT_FILE_STORAGE = 'website.storage_backends.MediaStorage'
 
 STATICFILES_STORAGE = 'website.storage_backends.StaticStorage'
