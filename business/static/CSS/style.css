@@ -53,7 +53,7 @@ body{
 }
 
 .primary-btn:hover{
-    background: url("https://s3.amazonaws.com/zaini-website/static/images/benefit1.jpg");
+    background: url("https://zaini-website.s3.amazonaws.com/static/images/benefit1.jpg");
     color: #189d18;
 
 }
@@ -88,7 +88,7 @@ body{
     order: 1;
     align-self: center;
     color: transparent;
-    background: url("https://s3.amazonaws.com/zaini-website/static/images/benefit1.jpg");
+    background: url("https://zaini-website.s3.amazonaws.com/static/images/benefit1.jpg");
     background-size: cover;
     background-position: top;
     background-clip: text;
@@ -112,7 +112,7 @@ body{
     font-weight: 500;
     transition: all 0.2s ease-in-out;
     color: transparent;
-    background: url("https://s3.amazonaws.com/zaini-website/static/images/benefit1.jpg");
+    background: url("https://zaini-website.s3.amazonaws.com/static/images/benefit1.jpg");
     background-size: cover;
     background-position: top;
     background-clip: text;
@@ -121,7 +121,7 @@ body{
 
 .nav-items a:hover{
     color: transparent;
-    background: url("https://s3.amazonaws.com/zaini-website/static/images/benefit3.jpg");
+    background: url("https://zaini-website.s3.amazonaws.com/static/images/benefit3.jpg");
     background-size: cover;
     background-position: center;
     background-clip: text;
@@ -254,7 +254,7 @@ body{
     border-bottom: 2px solid #000;
     align-self: center;
     color: transparent;
-    background: url("https://s3.amazonaws.com/zaini-website/static/images/benefit1.jpg");
+    background: url("https://zaini-website.s3.amazonaws.com/static/images/benefit1.jpg");
     background-size: cover;
     background-position: top;
     background-clip: text;
@@ -280,7 +280,7 @@ body{
     text-align: center;
     margin-bottom: 4rem;
     color: transparent;
-    background: url("https://s3.amazonaws.com/zaini-website/static/images/benefit3.jpg");
+    background: url("https://zaini-website.s3.amazonaws.com/static/images/benefit3.jpg");
     background-size: cover;
     background-position: top;
     background-clip: text;
@@ -295,7 +295,7 @@ body{
 
 .product-content h3{
     color: transparent;
-    background: url("https://s3.amazonaws.com/zaini-website/static/images/benefit3.jpg");
+    background: url("https://zaini-website.s3.amazonaws.com/static/images/benefit3.jpg");
     background-size: cover;
     background-position: top;
     background-clip: text;
@@ -366,7 +366,7 @@ body{
     color: #dcc129;
     border-bottom: 2px solid #b7a023; 
     color: transparent;
-    background: url("https://s3.amazonaws.com/zaini-website/static/images/benefit3.jpg");
+    background: url("https://zaini-website.s3.amazonaws.com/static/images/benefit3.jpg");
     background-size: cover;
     background-position: top;
     background-clip: text;
@@ -408,7 +408,7 @@ body{
 
 .contact-container h2{
     color: transparent;
-    background: url("https://s3.amazonaws.com/zaini-website/static/images/benefit3.jpg");
+    background: url("https://zaini-website.s3.amazonaws.com/static/images/benefit3.jpg");
     background-size: cover;
     background-position: top;
     background-clip: text;
@@ -481,7 +481,7 @@ body{
     border-bottom: 2px solid #000;
     text-align: center;
     color: transparent;
-    background: url("https: //s 3amazonaws .com/zaini website/static/images/benefit1.jpg");
+    background: url("https://zaini-website.s3.amazonaws.com/static/images/benefit1.jpg");
     background-size: cover;
     background-position: top;
     background-clip: text;
@@ -509,7 +509,7 @@ footer h2{
     font-weight: 500;
     padding: 0.5rem;
     color: transparent;
-    background: url("https://s3.amazonaws.com/zaini-website/static/images/benefit3.jpg");
+    background: url("https://zaini-website.s3.amazonaws.com/static/images/benefit3.jpg");
     background-size: cover;
     background-position: top;
     background-clip: text;
