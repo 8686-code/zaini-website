@@ -129,10 +129,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = "https://s3.amazonaws.com/zaini-website/static/"
+STATIC_URL = "https://zaini-website.s3.amazonaws.com/static/"
 STATIC_ROOT = 'static/'
 MEDIA_ROOT = 'media/'
-MEDIA_URL = "https://s3.amazonaws.com/zaini-website/media/"
+MEDIA_URL = "https://zaini-website.s3.amazonaws.com/media/"
 
 AWS_S3_OBJECT_PARAMETERS = {
     'CacheControl': 'max-age=86400',  # 24 hours cache control
