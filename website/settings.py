@@ -129,13 +129,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build' 'static')
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
-MEDIA_URL = "/media/"
+STATIC_URL = "https://s3.amazonaws.com/zaini-website/static/"
+STATIC_ROOT = 'static/'
+MEDIA_ROOT = 'media/'
+MEDIA_URL = "https://s3.amazonaws.com/zaini-website/media/"
+
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',  # 24 hours cache control
+}
 ############################### Added manually ###################################
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'business/static')]
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'business/static')]
 
 # MESSAGE_TAGS = {messages.INFO: "",50: "critical",}
 
@@ -173,3 +177,4 @@ AWS_S3_REGION_NAME = 'ap-south-1'
 AWS_ACCESS_KEY_ID = 'AKIASJAKYGE7DZNKY4NZ'
 
 AWS_SECRET_ACCESS_KEY = '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'
+
